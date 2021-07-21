@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>PageTitle</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="printArea">
+       <div class="container border mt-5">
+          <div class="row mt-3 justify-content-end">
+              <div class="col-2 text-end">
+                <input type="button" value="Print this Page" class="btn btn-dark" onclick="PrintPreview()">
+              </div>
+          </div>
+          
+          <div class="row align-items-center">
+              <div class="col-10">
+                <img src="img/IdeaFoundryLogo.png" alt="" class="img-fluid">
+              </div>
+              <div class="col-2 text-end">
+               <p class="fs-5">Client No: 4908</p>
+              </div>
+          </div>
+
+          <hr>
+
+          <div class="row justify-content-between">
+            <div class="col-2">
+                <div class=""><span class="fw-bold">Date:</span> 05/12/2019</div>
+            </div>
+            <div class="col-2 text-end">
+                <div class=""><span class="fw-bold">Invoice No:</span> 19005</div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row justify-content-between">
+            <div class="col-3">
+                <p> <span class="fw-bold"> Invoice To: </span><br>Mark Davis <br>3333 Al Davis Way <br>Las Vegas, NV 89118</p>                
+            </div>
+            <div class="col-3 text-end mr-1">
+                <p> <span class="fw-bold"> Pay To: </span><br>Idea Foundry,Irc.<br>2705 N. Enterprise St<br>Kernersville, NC 27284</p> 
+            </div>
+          </div>
+         
+          <table class="table table-striped table-bordered">
+              <thead>
+                  <tr class="">
+                      <th>Service</th>
+                      <th>Description</th>
+                      <th class="text-center">Rate</th>
+                      <th class="text-center">QTY</th>
+                      <th class="text-center">Amount</th>
+                  </tr>
+              </thead>
+              <tbody class="fs-6">
+                  <tr>
+                      <td scope="row">Design</td>
+                      <td>Website Design</td>
+                      <td class="text-center">$60.00</td>
+                      <td class="text-center">10</td>
+                      <td class="text-center">$600.00</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Development</td>
+                    <td>Website Development</td>
+                    <td class="text-center">$150.00</td>
+                    <td class="text-center">10</td>
+                    <td class="text-center">$1,500.00</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Deployment</td>
+                    <td>Development and Hosting</td>
+                    <td class="text-center"> $450.00</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">$450.00</td>
+                  </tr> 
+                  <tr>
+                    <td scope="row" colspan="4" class="text-end fw-bold">Sub Total:</td>
+                    <td class="text-center">$2,550.00</td>                    
+                  </tr> 
+                  <tr>
+                    <td scope="row" colspan="4" class="text-end fw-bold">Tax:</td>
+                    <td class="text-center">$0.00</td>                    
+                  </tr> 
+                  <tr>
+                    <td scope="row" colspan="4" class="text-end fw-bold">Total:</td>
+                    <td class="text-center">$2,550.00</td>                    
+                  </tr>
+              </tbody>
+          </table>
+
+          <div class="">
+              <p><span class="fw-bold">NOTE:</span> This is computer generated receipt and does not require physical signature.</p>
+          </div>
+          
+        
+       </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+    
+    <script>
+        function PrintPreview() {
+        var toPrint = document.getElementById('printArea');
+        var popupWin = window.open('', '_blank', 'width=350,height=150,location=no,left=200px');
+        popupWin.document.open();
+        popupWin.document.write('<html><title>::Print Preview::</title><link rel="stylesheet" type="text/css" href="Print.css" media="screen"/></head><body">')
+        popupWin.document.write(toPrint.innerHTML);
+        popupWin.document.write('</html>');
+        popupWin.document.close();
+    }
+    </script>
+
+</body>
+
+</html>
