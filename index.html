@@ -15,40 +15,41 @@
 </head>
 
 <body id="printArea">
-       <div class="container border mt-5">
-          <div class="row mt-3 justify-content-end">
-              <div class="col-2 text-end">
-                <input type="button" value="Print this Page" class="btn btn-dark" onclick="PrintPreview()">
+       <div class="container mt-4">
+          <div class="d-flex justify-content-end">
+              <div class="">
+                <button id="printButton" class="btn btn-dark" onclick="printInvoice()">Print This Page</button>
               </div>
           </div>
           
-          <div class="row align-items-center">
-              <div class="col-10">
-                <img src="img/IdeaFoundryLogo.png" alt="" class="img-fluid">
+          <div class="d-lg-flex justify-content-between align-items-center ">
+              <div class="">
+                <img  src="img/IdeaFoundryLogo.png" alt="" class="img-fluid w-75">
               </div>
-              <div class="col-2 text-end">
+
+              <div class="text-center mt-3 mt-md-3">
                <p class="fs-5">Client No: 4908</p>
               </div>
           </div>
 
-          <hr>
+          <div class="w-100 border-bottom my-3"></div>
 
-          <div class="row justify-content-between">
-            <div class="col-2">
+          <div class="d-flex justify-content-between">
+            <div class="">
                 <div class=""><span class="fw-bold">Date:</span> 05/12/2019</div>
             </div>
-            <div class="col-2 text-end">
+            <div class="">
                 <div class=""><span class="fw-bold">Invoice No:</span> 19005</div>
             </div>
           </div>
 
-          <hr>
+          <div class="w-100 border-bottom my-3"></div>
 
-          <div class="row justify-content-between">
-            <div class="col-3">
+          <div class="d-flex justify-content-between">
+            <div class="">
                 <p> <span class="fw-bold"> Invoice To: </span><br>Mark Davis <br>3333 Al Davis Way <br>Las Vegas, NV 89118</p>                
             </div>
-            <div class="col-3 text-end mr-1">
+            <div class="">
                 <p> <span class="fw-bold"> Pay To: </span><br>Idea Foundry,Irc.<br>2705 N. Enterprise St<br>Kernersville, NC 27284</p> 
             </div>
           </div>
@@ -116,17 +117,7 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
     
-    <script>
-        function PrintPreview() {
-        var toPrint = document.getElementById('printArea');
-        var popupWin = window.open('', '_blank', 'width=350,height=150,location=no,left=200px');
-        popupWin.document.open();
-        popupWin.document.write('<html><title>::Print Preview::</title><link rel="stylesheet" type="text/css" href="Print.css" media="screen"/></head><body">')
-        popupWin.document.write(toPrint.innerHTML);
-        popupWin.document.write('</html>');
-        popupWin.document.close();
-    }
-    </script>
+    <script src="js/site.js"></script>
 
 </body>
 
