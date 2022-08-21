@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>LDS_Quote_0001</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css" media="print">
+</head>
+
+<body id="printArea">
+       <div class="print container mt-4">
+        <div id="print-btn">
+          <div class="no-print d-flex justify-content-end">
+            <div class="">
+              <button id="printButton" class="btn btn-dark" onclick="printInvoice()">Print This Page</button>
+            </div>
+          </div>
+        </div>         
+          
+          <div class="d-lg-flex justify-content-between align-items-center ">
+              <div class="">
+                <h4>Lebron Diesel Service</h4>
+              </div>
+
+              <div class="text-center mt-3 mt-md-3">
+               <p class="fs-5">Client No: 4001</p>
+              </div>
+          </div>
+
+          <div class="w-100 border-bottom my-3"></div>
+
+          <div class="d-flex justify-content-between">
+            <div class="">
+                <div class=""><span class="fw-bold">Date:</span> 08/20/2022</div>
+            </div>
+            <div class="">
+                <div class=""><span class="fw-bold">Quote No:</span> 0001</div>
+            </div>
+          </div>
+
+          <div class="w-100 border-bottom my-3"></div>
+
+          <div class="d-flex justify-content-between">
+            <div class="">
+                <p> <span class="fw-bold"> Quote To: </span><br>Mark Davis <br>3333 Al Davis Way <br>Las Vegas, NV 89118</p>                
+            </div>
+          </div>
+         
+          <table class="table table-striped table-bordered">
+              <thead>
+                  <tr class="">
+                      <th>Service</th>
+                      <th>Description</th>
+                      <th class="text-center">Price</th>
+                      <th class="text-center">QTY</th>
+                      <th class="text-center">Amount</th>
+                  </tr>
+              </thead>
+              <tbody class="fs-6">
+                  <tr>
+                      <td scope="row">Parts</td>
+                      <td>Motor Gasket</td>
+                      <td class="text-center">$150.00</td>
+                      <td class="text-center">1</td>
+                      <td class="text-center">$150.00</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Parts</td>
+                    <td>Oil and Filter</td>
+                    <td class="text-center">$60.00</td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">$60.00</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Labor</td>
+                    <td>Installation of Motor gasket and change of oil and filter.</td>
+                    <td class="text-center"> $100.00</td>
+                    <td class="text-center">6</td>
+                    <td class="text-center">$600.00</td>
+                  </tr>                 
+              </tbody>
+              
+              <tfoot>
+                <tr>
+                  <td scope="row" colspan="4" class="text-end fw-bold">Sub Total:</td>
+                  <td class="text-center">$810.00</td>                    
+                </tr> 
+                <tr>
+                  <td scope="row" colspan="4" class="text-end fw-bold">Tax:</td>
+                  <td class="text-center">$0.00</td>                    
+                </tr> 
+                <tr>
+                  <td scope="row" colspan="4" class="text-end fw-bold">Total:</td>
+                  <td class="text-center">$810.00</td>                    
+                </tr>
+              </tfoot>
+          </table>
+
+          <div class="">
+              <p><span class="fw-bold">NOTE:</span> This Quote is valid for 30 days from 08/20/2022 to 09/20/2022.</p>
+          </div>
+          
+       </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+    
+    <!-- Javascript and J-Query -->
+    <script src="js/site.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
