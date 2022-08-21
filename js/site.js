@@ -7,10 +7,10 @@ function printInvoice() {
 }
 
 function removePrintBtn(){
-      printButtonContent = document.getElementById("print-btn").innerHTML;
-      document.getElementById("print-btn").innerHTML = "";
+      printButtonContent = $("#print-btn").html();
+      $("#print-btn").html("");
 }
 
 function loadPrintBtn() {
-      document.getElementById("print-btn").innerHTML = printButtonContent;
+      $("#print-btn").html(printButtonContent);
 }
